@@ -41,7 +41,7 @@
   text-transform: capitalize;
   border: none;
   text-decoration: none;
-  transition:all .5s linear;
+  /* transition: .5s linear; */
 }
 ::selection{
   background-color:#ef233c ;
@@ -106,11 +106,13 @@ header .searsh-form{
   /* Hide the search box */
   border-top: .1rem solid rgba(255, 255, 255, .2);
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+ 
+
 }
 /* Activate the value and show the search box */
 header .searsh-form.active{
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);  
-
+  
 }
 
 header .searsh-form #search-bar{
@@ -120,6 +122,7 @@ header .searsh-form #search-bar{
   color:#333333 ;
   background-color: #edf2f4;
   border-radius:1rem;
+
 
 }
 header .searsh-form label{
@@ -148,9 +151,11 @@ header .searsh-form label:hover{
   justify-content: center;
   align-items: center;
   z-index: 10000;
+ 
 }
 .logo-in-form.active{
   top: 0;
+  
 }
 .logo-in-form #form-close{
   position: absolute;
@@ -182,6 +187,7 @@ header .searsh-form label:hover{
   animation: gradient 5s ease infinite;
   margin: auto;
   margin-top: 200px;
+ 
 }
 
 @keyframes gradient {
@@ -604,6 +610,7 @@ z-index: -1;
   flex-wrap: wrap;
   gap: 1.5rem;
 
+
 }
 .Gallery .container .box{
   overflow: hidden;
@@ -613,6 +620,7 @@ z-index: -1;
   border: 1rem solid white;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   position: relative;
+  
 }
 
 
@@ -631,6 +639,7 @@ z-index: -1;
   padding: 5rem 2rem 2rem;
   top:-100%;
   left: 0;
+  transition: .5s linear; 
 
 }
 .Gallery .container .box:hover .contant{
