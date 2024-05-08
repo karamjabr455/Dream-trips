@@ -41,7 +41,7 @@
   text-transform: capitalize;
   border: none;
   text-decoration: none;
-  /* transition: .5s linear; */
+   transition: .5s linear; 
 }
 ::selection{
   background-color:#ef233c ;
