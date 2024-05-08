@@ -690,6 +690,79 @@ z-index: -1;
   padding: 1rem 0;
 }
 
+@media (max-width:522px) {
+  .review-slider {
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+  }
+
+
+  .review .box-slider img{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  
+}
+.review .box-slider h3{
+  color: #d90429;
+  font-size: 1.5rem;
+
+}
+.review .box-slider h2{
+  color: #d90429;
+  font-size: 1rem;
+}
+.review .box-slider p{
+  color: #414141;
+  font-size: 1rem;
+  
+}
+}
+@media (max-width:360px) {
+  .review-slider {
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+  }
+
+
+  .review .box-slider img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  
+}
+.review .box-slider h3{
+  color: #d90429;
+  font-size: 1rem;
+
+}
+.review .box-slider h2{
+  color: #d90429;
+  font-size: 1rem;
+}
+.review .box-slider p{
+  color: #414141;
+  font-size: 0.7rem;
+  
+}
+
+
+}
+@media (max-width:388px) 
+{
+  .review .box-slider p{
+    color: #414141;
+    font-size: 0.7rem;
+    
+  }
+}
+
 
 /*  contact............................................................. */
 
