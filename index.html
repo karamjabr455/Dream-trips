@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+   
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Dream trips</title>
+</head>
+<body>
+   <!--header------------------------------------------------------------->
+ <header>
+    <div id="menu-bar" class="fas fa-bars " onclick="showMenu()" ></div>
+
+    <a href="" class="logo"><img src="./photo/تصميم بدون عنوان (4).png" alt="logo"></a>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#package">packages</a>
+        <a href="#Services">servises</a>
+        <a href="#Gallery">gallary</a>
+        <a href="#Members">Members</a>
+        <a href="#contact">contact</a>
+
+    </nav>
+    <div class="icon">
+        <i class="fas fa-search" onclick="showbar()" id="searsh-btn"></i> 
+        <i class="fas fa-user"  onclick="showForm()"></i>
+    </div>
+    <form action="" class="searsh-form">
+        <input type="search" id="search-bar" placeholder="what you looking for...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+ </header>
+
+ <!-- Sign up-form........................................... -->
+
+
+ <div class="logo-in-form">
+    <i class="fas fa-times" id="form-close" onclick="hideForm()"></i>
+    <div class="form-container">
+        <form class="form">
+            <h2>Log in</h2>
+          <div class="form-group">
+          
+            <label for="email">Email</label>
+            <input required="" name="email" id="email" type="email">
+
+            <label for="email">Password</label>
+
+            <input required="" name="email" id="email" type="password">
+             
+          
+           <p>Forgot your password? <a href="">click Here</a></p>
+          <P>You don't have an account <a href="./register.html">Register </a></P>
+         
+          </div>
+          
+          <button type="submit" class="form-submit-btn">Log in</button>
+        </form>
+      </div>
+ </div>
+
+ <!-- slider...................................................... -->
+
+<section class="home" id="home">
+    <div class="content">
+        <h3>Dream trips</h3>
+        <p>Discover New places with us ,Adventure awaits</p>
+        <a href="" class="btn">Discover more</a>
+    </div>
+    <div class="controls">
+        <span class="video-btn red" data-src="./Videos/2222.mp4"></span>
+        <span class="video-btn" data-src="./Videos/2222.mp4"></span>
+        <span class="video-btn" data-src="./Videos/3333.mp4"></span>
+        <span class="video-btn" data-src="./Videos/4444.mp4"></span>
+       
+
+    </div>
+    <div class="video-container" >
+        <video autoplay muted loop id="video-slider">
+          <source src="./Videos/1111.mp4" type="video/mp4">
+          <source src="./Videos/1111.mp4" type="video/ogg">
+          Your browser does not support video
+
+        </video>
+      </div>
+</section>
+
+<!-- ------------------------------------------------------------------- -->
+
+<section class="book" id="book">
+    <h1 class="heading">
+        <span>B</span>
+        <span>O</span>
+        <span>O</span>
+        <span>K</span>
+        &nbsp;
+        <span>N</span>
+        <span>O</span>
+        <span>W</span>
+
+    </h1>
+    <div class="row">
+        <div class="imges">
+            <img src="./photo/Time To Travel Instagram Post.png" alt="book" >
+
+        </div>
+        <form action="" >
+            <div class="inputdiv">
+                <h3>where are you going</h3>
+                <input type="text" placeholder="place name">
+          
+    </div>
+    <div class="inputdiv">
+        <h3>how many</h3>
+        <input type="number" placeholder="number of people">
+  
+</div>
+<div class="inputdiv">
+    <h3>arrival</h3>
+    <input type="datetime-local" placeholder="place name">
+
+</div>
+<div class="inputdiv">
+    <h3>leaving</h3>
+    <input type="datetime-local" placeholder="place name">
+
+</div>
+<input type="submit" class="btn" value="book now">
+        </form>
+</section>
+
+<!--package----------------------------------------------------------------------------------------->
+<section class="package"  id="package">
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <div class="containerr">
+        <div class="box1">
+            <img src="./photo/أمستردام.png" alt="Amsterdam">
+            <div class="contant">
+                <h3><i class="fas fa-map-marker-alt"></i>Amsterdam</h3>
+                <p>Do you dream of a trip to a charming city that combines history and modernity, where you roam the streets by bicycle and enjoy the entertainment of celebrities on the banks of the canals?
+                    Then this is your ideal destination!</p>
+                <div class="stars">
+                    <i class="far fa-star" data-rating="1"></i>
+                    <i class="far fa-star" data-rating="2"></i>
+                    <i class="far fa-star" data-rating="3"></i>
+                    <i class="far fa-star" data-rating="4"></i>
+                    <i class="far fa-star" data-rating="5"></i>
+                 
+                  
+                  <span class="current-rating"> Rating value: 0</span>
+                </div>
+                <div class="price">1600$ <span>2000$</span>   (7days) </div>
+                <a href="" class="btn">check now</a>
+            </div>
+        </div>
+        <div class="box1">
+            <img src="./photo/بودابست.png" alt="Budapest">
+            <div class="contant">
+                <h3><i class="fas fa-map-marker-alt"></i>Budapest</h3>
+                <p>Embark on a journey through time and discover the magic of this ancient city known for its picturesque Danube River, suspension bridges, historic castle, luxurious buildings, and natural thermal baths.</p>
+                <div class="stars">
+                    <i class="far fa-star" data-rating="1"></i>
+                    <i class="far fa-star" data-rating="2"></i>
+                    <i class="far fa-star" data-rating="3"></i>
+                    <i class="far fa-star" data-rating="4"></i>
+                    <i class="far fa-star" data-rating="5"></i>
+                 
+                  
+                  <span class="current-rating"> Rating value: 0</span>
+                </div>
+                <div class="price">1200$<span>1500$</span>  (7days)</div>
+                <a href="" class="btn">check now</a>
+            </div>
+        </div>
+        <div class="box1">
+            <img src="./photo/دبي.png" alt="Dubai">
+            <div class="contant">
+                <h3><i class="fas fa-map-marker-alt"></i>Dubai</h3>
+                <p>Embark on an amazing journey and discover the magic of this unique city known for its high-rise towers, luxurious shopping malls, luxurious resorts, diverse activities, and authentic Arab culture Burj Khalifa.</p>
+                <div class="stars">
+                    <i class="far fa-star" data-rating="1"></i>
+                    <i class="far fa-star" data-rating="2"></i>
+                    <i class="far fa-star" data-rating="3"></i>
+                    <i class="far fa-star" data-rating="4"></i>
+                    <i class="far fa-star" data-rating="5"></i>
+                 
+                  
+                  <span class="current-rating"> Rating value: 0</span>
+                </div>
+                <div class="price">2400$ <span>3000 $</span>  (7days)</div>
+                <a href="" class="btn">check now</a>
+            </div>
+        </div>  <div class="box1">
+            <img src="./photo/سنغافورة.png" alt="Singapore">
+            <div class="contant">
+                <h3><i class="fas fa-map-marker-alt"></i>Singapore</h3>
+                <p>Singapore: Journey to the City of Gardens and Innovation
+                    Discover the magic of Singapore: an enchanting destination that combines green nature and modern life
+                    Singapore: a model city-state where cultures meet</p>
+                <div class="stars">
+                    <i class="far fa-star" data-rating="1"></i>
+                    <i class="far fa-star" data-rating="2"></i>
+                    <i class="far fa-star" data-rating="3"></i>
+                    <i class="far fa-star" data-rating="4"></i>
+                    <i class="far fa-star" data-rating="5"></i>
+                 
+                  
+                  <span class="current-rating"> Rating value: 0</span>
+                </div>
+                <div class="price">2000$ <span>2500 $</span>   (7days)</div>
+                <a href="" class="btn">check now</a>
+            </div>
+        </div>  <div class="box1">
+            <img src="./photo/مكة.png" alt="Makkah">
+            <div class="contant">
+                <h3><i class="fas fa-map-marker-alt"></i>Makkah</h3>
+                <p>For special Hajj and Umrah trips: Mecca: A journey to the heart of Islam and the source of faith
+                    Discover the magic of Mecca: a sacred destination that attracts the hearts of Muslims from all over the world
+                    </p>
+                <div class="stars">
+                    <i class="far fa-star" data-rating="1"></i>
+                    <i class="far fa-star" data-rating="2"></i>
+                    <i class="far fa-star" data-rating="3"></i>
+                    <i class="far fa-star" data-rating="4"></i>
+                    <i class="far fa-star" data-rating="5"></i>
+                 
+                  
+                  <span class="current-rating"> Rating value: 0</span>
+                </div>
+                <div class="price">4000$ <span>5000$</span> 15 days Pilgrimage</div>
+                
+                <a href="" class="btn">check now</a>
+            </div>
+        </div>  <div class="box1">
+            <img src="./photo/نيويورك.png" alt="New York">
+            <div class="contant">
+                <h3><i class="fas fa-map-marker-alt"></i>New York</h3>
+                <p>New York: A Journey to the City of Dreams and Aspirations
+                    Discover the magic of New York: the capital of the world that never sleeps
+                    New York: a melting pot where cultures melt and dreams come true</p>
+                <div class="stars">
+                    <i class="far fa-star" data-rating="1"></i>
+                    <i class="far fa-star" data-rating="2"></i>
+                    <i class="far fa-star" data-rating="3"></i>
+                    <i class="far fa-star" data-rating="4"></i>
+                    <i class="far fa-star" data-rating="5"></i>
+                 
+                  
+                  <span class="current-rating"> Rating value: 0</span>
+                </div>
+                <div class="price">2240$ <span>2800$</span>  (7days)</div>
+                <a href="" class="btn">check now</a>
+            </div>
+        </div>
+
+    </div>
+       
+
+</section>
+<!-----------------------------------Services-------------------------------------------------- -->
+
+<section class="Services" id="Services">
+
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="container">
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>Book your ideal hotel at the best prices!</h3>
+            <p>Book your hotel at the best prices through our website Enjoy an unparalleled accommodation experience in our luxury hotels</p>
+
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>Enjoy the cooking experience</h3>
+            <p>Save money on meals at restaurants.
+                Experience local cuisine authentically</p>
+            
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Tourist trips at special prices!</h3>
+            <p>Book your hotel at the best prices through our website Enjoy an unparalleled accommodation experience in our luxury hotels</p>
+            
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>Special trips to various destinations</h3>
+            <p>From the towering Himalayas to the stunning beaches of the Maldives - enjoy an unforgettable tourism experience.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>Special offers on flights</h3>
+            <P>Book your trip now and enjoy an unforgettable tourist experience!
+                Travel comfortably and safely with the best airlines!</P>
+            
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>Hiking in the most beautiful landscapes!</h3>
+            <p>Essential tools and equipment for hiking trips!
+                Safety first: Tips to ensure a safe hiking trip!</p>
+            
+        </div>
+    </div>
+
+</section>
+
+
+<!-- Gallery ........................ -->
+<section class="Gallery " id="Gallery" >
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+        
+    </h1>
+    <div class="container">
+    <div class="box">
+        <img src="./photo/Green Beige Cards Travel Agency Facebook Post.png" alt="" >
+        <div class="contant">
+            <h3>amazing place</h3>
+            <p>Book your trip now and enjoy an unforgettable tourist experience!
+                Travel comfortably and safely with the best airlines! </p>
+            <a href="" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="./photo/Green Beige Cards Travel Agency Facebook Post1.png" alt="" >
+        <div class="contant">
+            <h3>amazing place</h3>
+            <p>Book your trip now and enjoy an unforgettable tourist experience!
+                Travel comfortably and safely with the best airlines! </p>
+            <a href="" class="btn">see more</a>
+        </div>
+    </div>
+     <div class="box">
+        <img src="./photo/Green Beige Cards Travel Agency Facebook Post2.png" alt="" >
+        <div class="contant">
+            <h3>amazing place</h3>
+            <p>Book your trip now and enjoy an unforgettable tourist experience!
+                Travel comfortably and safely with the best airlines! </p>
+            <a href="" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="./photo/Green Beige Cards Travel Agency Facebook Post3.png" alt="" >
+        <div class="contant">
+            <h3>amazing place</h3>
+            <p>Book your trip now and enjoy an unforgettable tourist experience!
+                Travel comfortably and safely with the best airlines! </p>
+            <a href="" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="./photo/Green Beige Cards Travel Agency Facebook Post4.png" alt="" >
+        <div class="contant">
+            <h3>amazing place</h3>
+            <p>Book your trip now and enjoy an unforgettable tourist experience!
+                Travel comfortably and safely with the best airlines! </p>
+            <a href="" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="./photo/Green Beige Cards Travel Agency Facebook Post5.png" alt="" >
+        <div class="contant">
+            <h3>amazing place</h3>
+            <p>Book your trip now and enjoy an unforgettable tourist experience!
+                Travel comfortably and safely with the best airlines! </p>
+            <a href="" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="./photo/Green Beige Cards Travel Agency Facebook Post6.png" alt="" >
+        <div class="contant">
+            <h3>amazing place</h3>
+            <p>Book your trip now and enjoy an unforgettable tourist experience!
+                Travel comfortably and safely with the best airlines! </p>
+            <a href="" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="./photo/Green Beige Cards Travel Agency Facebook Post7.png" alt="" >
+        <div class="contant">
+            <h3>amazing place</h3>
+            <p>Book your trip now and enjoy an unforgettable tourist experience!
+                Travel comfortably and safely with the best airlines! </p>
+            <a href="" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="./photo/Green Beige Cards Travel Agency Facebook Post8.png" alt="" >
+        <div class="contant">
+            <h3>amazing place</h3>
+            <p>Book your trip now and enjoy an unforgettable tourist experience!
+                Travel comfortably and safely with the best airlines! </p>
+            <a href="" class="btn">see more</a>
+        </div>
+    </div>
+
+</div>
+    
+</section>
+
+<!-- review......................................................... -->
+
+<section class="review" id="Members">
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+        
+
+        
+    </h1>
+    <div class="review-slider">
+       
+            
+                <div class="box-slider">
+                    <img src="./photo/karam.JPG" alt="imges" >
+                    <h3>karam jabr</h3>
+                    <h2>Front-end developer</h2>
+                    <p>Testing and writing code to ensure that the user interface works correctly on all devices and browsers.
+                        Improving user interface performance to ensure fast loading and smooth operation.</p>
+
+                </div>
+           
+            
+                <div class="box-slider">
+                    <img src="./photo/hamza.jpg" alt="imges" >
+                    <h3>hamza jabr</h3>
+                    <h2>UI UX designer</h2>
+                    <p>Attractive and easy-to-use user interface design.
+                        Conduct user research to understand their needs and expectations.
+                        Create prototypes and test them to get feedback from users.</p>
+                    
+                </div>
+            
+        
+                <div class="box-slider">
+                    <img src="./photo/tasneem (1).jpg" alt="imges" >
+                    <h3>tasneem sultan</h3>
+                    <h2>Software Engineer</h2>
+                    <p>Design, develop, build and implement computer programs.
+                        Writing, testing and debugging code.
+                        Improving software performance and correcting errors.
+                        Work with other team members to develop integrated software solutions.</p>
+                    
+                </div>
+            
+            
+                <div class="box-slider">
+                    <img src="./photo/qusai khalil.jpg" alt="imges" >
+                    <h3>qusai khalil</h3>
+                    <h2>lawyer</h2>
+                  
+                    <p>Providing legal advice to individuals and companies.
+                        Representing clients in court and other proceedings.
+                        Preparing contracts and other legal documents.
+                        Conduct legal research and make recommendations based on the law.
+                        Protecting customers' rights and interests.</p>
+                    
+                </div>
+           
+            
+                <div class="box-slider">
+                    <img src="./photo/norma.jpg" alt="imges" >
+                    <h3>norma dakak</h3>
+                    <h2>information security</h2>
+                    <p>Protecting computer systems, networks and data from electronic threats.
+                        Develop and implement information security plans.
+                        Testing computer systems and networks to detect security vulnerabilities.
+                        Responding to and handling security incidents.
+                        Educating employees about cybersecurity risks.</p>
+                    
+                </div>
+            
+          
+                <div class="box-slider">
+                    <img src="./photo/noor.jpg" alt="imges" >
+                    <h3>noor mohammad</h3>
+                    <h2>Communications engineer</h2>
+                    <p>Design, develop, build, operate and maintain communications systems.
+                        Analyze communications needs and develop solutions that meet those needs.
+                        Writing, testing and debugging specifications for communications systems.
+                        Troubleshooting in communications systems.
+                        Stay up to date with the latest communications technologies.</p>
+                    
+                </div>
+            
+             
+        
+    </div>
+
+    
+</section>
+   <!-- contact...................................................................................................................... -->
+   <h1 class="heading">
+    <span>c</span>
+    <span>o</span>
+    <span>n</span>
+    <span>t</span>
+    <span>a</span>
+    <span>c</span>
+    <span>t</span>
+
+    
+</h1>
+
+
+   <div id="google" class="container">
+    <div class="row">
+      <div class="col-lg-6">       
+        <!-- google maps.................. -->
+        <iframe class="map-container" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1358.6828773047807!2d36.290697140315416!3d33.52215525673318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2s!4v1713937310733!5m2!1sar!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col-lg-6">
+        <form action="" class="contact-form" id="contact">
+          <div class="form-groub">
+            <input type="text" name="" id="" class="form-control" placeholder="Name" required>
+            
+          </div>
+
+
+          <div class="form-groub">
+            <input type="text" name="" id="" class="form-control" placeholder="Email" required>
+           
+          
+          </div>
+          <div class="form-groub">
+            <input type="text" name="" id="" class="form-control" placeholder="Subject" required>
+           
+          </div>
+
+
+          <div class="form-groub">
+            <textarea type="text" name="" id="" class="form-control" rows="9" placeholder="Message" required></textarea>
+           
+          </div>
+
+          <div class="button-container">
+            <button type="submit" class="btn btn-primaty">Send a message now</button>
+            <button type="reset" class="btn btn-primaty1">Reset</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+          <!-- footer......................................................................... -->
+
+          <footer class="footer">
+            <div class="container">
+              <p>Copyrights &copy; 2024 Dream trips Design: <span>Karam jabr</span> </p>
+            </div>
+
+          </footer>
+
+
+
+
+
+
+
+
+
+
+
+<script src="./js/mine.js"></script>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+

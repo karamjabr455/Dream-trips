@@ -1,0 +1,176 @@
+
+
+body{
+    background-image: url(../photo/Blue\ Minimalist\ Desktop\ Wallpaper.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+a{
+  text-decoration: none;
+  color: #d90429;
+  text-align: end;
+}
+.form-container {
+    width: 450px;
+    
+    background: linear-gradient(#212121, #212121) padding-box,
+                linear-gradient(145deg, transparent 35%,#ef233c, #d90429) border-box;
+    border: 5px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+    margin: auto;
+    margin-top: 50px;
+    height: 90vh; 
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .form-container button:active {
+    scale: 0.95;
+  }
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-top: 1px;
+  }
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  .form-container .form-group input {
+    width: 90%;
+    padding: 5px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+  }
+  
+  .form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+  }
+  
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: #d90429;
+  }
+  
+  .form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #d90429;
+  }
+  
+  .form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: #717171;
+    font-weight: 600;
+    width: 40%;
+    background: #313131;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  .form-container .form-submit-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+  }
+  
+
+  #gender{
+    background-color: #212121;
+    color: #fff;
+  }
+
+/* Responsev//////////////////////////////////////////// */
+  @media (max-width:990px){
+    .form-container{
+      width: 90%;
+      height: 80vh;
+      font-size: small;
+      
+      
+    }
+    .form-container .form-submit-btn{
+      position: absolute;
+      top: 75%;
+
+    }
+
+
+    .form-group{
+      width: 100%;
+      height: 100vh;
+    }
+  }
+  @media (max-height: 700px) {
+    .form-container {
+        height: auto;
+        padding: 10px;  /* أضف padding لتقليل الارتفاع الكلي */
+    }
+    .form-container .form-submit-btn{
+      width: 40%;   /* استخدام العرض الكامل للفورم */
+      max-width: 300px; /* تحديد أقصى عرض */
+      margin: 50px auto; /
+    }
+
+
+}
